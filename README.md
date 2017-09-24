@@ -8,9 +8,9 @@ Markov chain Python class:
 
 Methods:
 
-- `learn(img, salt)`, creates a model given an image `img` and `salt` value.
+- `learn(img, salt)` creates a model given an image `img` and `salt` value.
 
-- `generate(img_size)`, generates a random image with a size `img_size`.
+- `generate(img_size)` generates a random image with a size `img_size`.
 
 The `order>=1` parameter corresponds to the Markov chain order. 
 
