@@ -4,13 +4,13 @@ Main usage: building Markov models from images, and generating random images.
 
 Markov chain Python class:
 
-- `MarkovImg(order)`: char level 
+- `MarkovImg(order)` 
 
 Methods:
 
 - `learn(img, salt)`, creates a model given an image `img` and `salt` value.
 
-- `generate(img_size)`, generates random image with a size `img_size`.
+- `generate(img_size)`, generates a random image with a size `img_size`.
 
 The `order>=1` parameter corresponds to the Markov chain order. 
 
@@ -33,7 +33,7 @@ im.show()
 ```
 Different values of the parameters will give different results. 
 
-This example uses the standard `lena.png` with `order,salt = 4,0.1`:
+This example uses the standard `lena.png` with `order = 4, salt = 0.1`:
 
 ![](imgs/lena.png)
 
@@ -65,7 +65,7 @@ mc.learn(img.transpose(Image.ROTATE_270),salt)
 im = mc.generate((img.size[0]*2,2*img.size[1]))
 im.show()
 ```
-This example uses the standard `mandrill.png` with `order,salt = 3,0.4`:
+This example uses the standard `mandrill.png` with `order=3, salt = 0.4`:
 
 ![](imgs/mandrill.png)
 
