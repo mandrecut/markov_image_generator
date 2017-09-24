@@ -16,6 +16,8 @@ The `order>=1` parameter corresponds to the Markov chain order.
 
 The `0<=salt<=1` parameter helps with learning by randomly flipping the LSB in pixels. 
 
+Different values of the parameters will give different results. 
+
 ## Basic usage
 
 ```python
@@ -31,8 +33,6 @@ mc.learn(img,salt)
 im = mc.generate(img.size)
 im.show()
 ```
-Different values of the parameters will give different results. 
-
 This example uses the standard `lena.png` with `order = 4, salt = 0.1`:
 
 ![](imgs/lena.png)
